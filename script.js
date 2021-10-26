@@ -1,23 +1,35 @@
 
 
 const buttons = document.querySelectorAll("button")
-let result =document.querySelector('.rezultat');
+
 buttons.forEach(item => {
     item.addEventListener('click' ,(e) => {
-        if (e.target.innerText !== "=" && e.target.innerText !== "C") {
-            result.textContent += e.target.textContent
+        let result =document.querySelector('.rezultat').value;
+        const one = document.querySelector(".input1").value
+        const two = document.querySelector(".input2").value
+
+        if (e.target.innerHTML === "+" ) {
+            result = plus(one,two)
+            console.log(result)
         }
-        else if (e.target.innerText==="C"){
-            buttons.textContent="";
-            result.textContent= "";
+        else if (e.target.innerHTML==="-"){
+            result=minus(one,two)
+            console.log(result)
         }
-        else if(e.target.innerText === "=" && e.target.innerText !== "C"){
-            let arr = buttons.textContent.split("");
-            calculator(arr[0], arr[1], arr[2]);
+        else if (e.target.innerHTML==="/"){
+            result=devide(one,two)
+            console.log(result)
         }
+        else if (e.target.innerHTML==="*"){
+            result=multiply(one,two)
+            console.log(result)
+        }
+
     })});
 
-const plus = (num1, num2) => num1 + num2
+const plus = (num1, num2) =>  num1 + num2
+
 
 const minus = (num1, num2) =>num1 - num2
+
 
