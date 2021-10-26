@@ -1,4 +1,5 @@
 
+
 const buttons = document.querySelectorAll("button")
 let result =document.querySelector('.rezultat');
 buttons.forEach(item => {
@@ -16,8 +17,13 @@ buttons.forEach(item => {
         }
     })});
 
-=======
+
 const plus = (num1, num2) => { num1 + num2}
 
 const minus = (num1, num2) => { num1 - num2}
+
+
+const plus = (num1, num2) => num1 + num2
+
+const minus = (num1, num2) =>num1 / num2
 
