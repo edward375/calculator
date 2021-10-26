@@ -1,5 +1,6 @@
+
 const buttons = document.querySelectorAll("button")
-let result =document.querySelector('.result');
+let result =document.querySelector('.rezultat');
 buttons.forEach(item => {
     item.addEventListener('click' ,(e) => {
         if (e.target.innerText !== "=" && e.target.innerText !== "C") {
@@ -14,4 +15,9 @@ buttons.forEach(item => {
             calculator(arr[0], arr[1], arr[2]);
         }
     })});
+
+=======
+const plus = (num1, num2) => { num1 + num2}
+
+const minus = (num1, num2) => { num1 - num2}
 
