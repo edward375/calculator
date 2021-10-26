@@ -3,3 +3,6 @@ const multiply = () =>{
     let p2 = document.querySelector('.input2').value
 
 }
+const plus = (num1, num2) => { num1 + num2}
+
+const minus = (num1, num2) => { num1 / num2}
