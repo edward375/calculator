@@ -1,3 +1,6 @@
+const multiply = (num1,num2) =>{
+    let resultNum = num1*num2
+}
 
 
 const buttons = document.querySelectorAll("button")
