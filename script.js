@@ -7,7 +7,7 @@ const buttons = document.querySelectorAll("button")
 
 buttons.forEach(item => {
     item.addEventListener('click' ,(e) => {
-        let result =document.querySelector('.rezultat').value;
+        let result =document.querySelector('.result').value;
 
         const one = document.querySelector(".input1").value
         const two = document.querySelector(".input2").value
@@ -24,8 +24,8 @@ buttons.forEach(item => {
 
         }
         else if (e.target.innerHTML==="/"){
-            result=devide(parseInt(one),parseInt(two))
-            console.log(result)
+            result=devide(parseInt(one),parseInt(two));
+            // console.log(result)
         }
         else if (e.target.innerHTML==="*"){
             result=multiply(parseInt(one),parseInt(two))
@@ -38,5 +38,11 @@ buttons.forEach(item => {
 const plus = (num1, num2) =>  num1 + num2
 
 const minus = (num1, num2) =>num1 - num2
+
+const devide = (num1, num2) => {
+    let resultDevide = num1/num2;
+    console.log(resultDevide);
+}
+
 
 
