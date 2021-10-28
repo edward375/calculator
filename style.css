@@ -1,0 +1,23 @@
+h2 {
+    text-align: center;
+}
+
+.inputContainer > input {
+    display: block;
+    margin: auto;
+}
+
+.container {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container > button {
+    width: 25px;
+    height: 25px;
+}
+
+p {
+    text-align: center;
+}
